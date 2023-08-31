@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- elementos input no form em geral -->
+        <!-- colchetes [] colocar propriedade/atributo -->
+        <label for=email> Email </label> 
+        <input type="email" id="email">
+        <label for="cor"> Cor</label>
+        <input type="'color" id="cor">
+        
+        <!-- Emmit input[type=submit]{value=Enviar} -->
+        <input type="submit" value=Enviar>
+        <!-- value aquilo maus relacionada como opçaõ  -->
+        <!-- name não precisa ser o mesmo do id, name faz referencia no servidor, id lado cliente/front-->
+        <select id="estado" name="estado">
+            <option value="">São Paulo</option>
+            <option value="">Rio de Janeiro</option>
+            <option value="">Espírito Santo</option>
+            <option value="">Minas Gerais</option>
+        </select>
+        <!-- fazem parte de um grupo, só pode selecionar um, coloca um name igual -->
+        <!-- rótulo associando com id -->
+
+        <!-- caixinhaa, que normalembte  tem um legend borda com título  -->
+        <fieldset>
+            <legend>Escolha um veículo</legend>
+            <input 
+                id = "X1"
+                type="radio" 
+                name="veículo">
+                <label for="X1">X1</label>
+            <input 
+                id="Celta"
+                type="radio" 
+                name="veículo">
+                <!-- rótulo foi feiro para o elemento html que o id é igual a  -->
+                <label for="Celta">Celta</label>
+            <input 
+                id="Nivus"
+                type="radio" 
+                name="veículo">
+                <label for="Nivus">Nivus</label>
+        </fieldset>
+            <legend>De quais cores vc gosta?</legend>
+            <input 
+                type="checkbox"    
+                id="vermelho"
+                name="cor">
+            <label for="vermelho">Vermelho</label>
+            <input 
+                type="checkbox" 
+                id="verde" 
+                name="cor"
+            <label for="verde">Verde</label>
+
+        <fieldset>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
